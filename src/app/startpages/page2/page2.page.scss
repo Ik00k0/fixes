@@ -1,0 +1,34 @@
+
+.bg-class {
+  --background: linear-gradient(
+    194deg,
+    #662d72 23.3%,
+    #44a5c6 100%
+  ) !important; //we need to chamge the gradient to match what we need
+}
+
+.img-class {
+  height: 60%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30%;
+}
+
+.w-80 {
+  max-width: 80%;
+}
+
+.inlineCenter {
+  text-align: center;
+}
+
+.button-clear > .button-text {
+  display: none !important;
+}
+
+.button-text.sc-ion-back-button-md {
+  display: none;
+}
+

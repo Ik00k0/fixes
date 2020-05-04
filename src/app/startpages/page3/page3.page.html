@@ -1,0 +1,134 @@
+<ion-content fullscreen class="lightPink">
+
+
+  <ion-grid fixed>
+    <ion-row class="centerRpw">
+      <ion-col size="2" class="align-middle">
+        <ion-fab-button size="small" class="purpleBackButton" router-direction="back">
+
+          <ion-back-button text="" class="whiteText" defaultHref="page2">
+            <ion-icon color="white" name="caret-back"></ion-icon>
+          </ion-back-button>
+
+        </ion-fab-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="centerRow">
+
+      <ion-col size="12" class="align-middle">
+        <h1 class="mindITHeader purple mt-4 mb-1">Getting To Know You</h1>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="centerRow mb-3">
+      <ion-col size="11">
+        <p class="paragraphText purple">
+          If it's, We'd like to get to know your challenges so we can relate with you better
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <span>
+
+
+      <ion-row class="centerRow">
+
+        <ion-col size="4">
+          <button shape="round" fill="outline" class="btn btn-outline-primary" (click)="selected('autism')"
+            id="autism">Autism</button>
+        </ion-col>
+
+        <ion-col size="4">
+          <button shape="round" fill="outline" class="btn btn-outline-primary" (click)="selected('adhd')"
+            id="adhd">ADHD</button>
+        </ion-col>
+
+        <ion-col size="4">
+          <button shape="round" fill="outline" class="btn btn-outline-primary" (click)="selected('ocd')"
+            id="ocd">OCD</button>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+          <button id="depression" (click)="selected('Depression')" shape="round"
+            class="btn btn-outline-primary w-80">Depression
+          </button>
+        </ion-col>
+
+        <ion-col size="6">
+          <button id="bipolar" shape="round" (click)="selected('Bipolar')" class="btn btn-outline-primary w-80">Bipolar
+            Disorder
+          </button>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col size="3">
+          <button id="ptsd" shape="round" (click)="selected('PTSD')" class="btn btn-outline-primary">PTSD</button>
+        </ion-col>
+
+        <ion-col size="5">
+          <button id="anxiety" shape="round" (click)="selected('anxiety')" class="btn btn-outline-primary">General
+            Anxiety
+          </button>
+        </ion-col>
+
+        <ion-col size="3">
+          <button id="selfharm" shape="round" (click)="selected('selfharm')" class="btn btn-outline-primary">Self
+            Harm</button>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row class="">
+
+        <ion-col size="6">
+          <button id="schizo" shape="round" (click)="selected('schizo')"
+            class="btn btn-outline-primary">Schizophrenia</button>
+        </ion-col>
+
+        <ion-col size="4">
+          <button id="eatingd" shape="round" (click)="selected('eatingd')" class="btn btn-outline-primary">Eating
+            Disorder
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </span>
+
+    <!-- <ion-row class="centerRow mt-5">
+      <ion-col size="10">
+        <ion-input type="text" class="purple bgWhite form-control" placeholder="+ Add Symptoms" (click)="opKeyboard()"></ion-input>
+      </ion-col>
+    </ion-row> -->
+
+    <ion-row class="centerRow mt-4">
+      <ion-col size="12" class="mt-4">
+        <button expand="block" id="skip" fill="outline" class="btn-outline-primary btn-lg btn-block borderCust"  (click)="continue()">{{skip}}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <!-- <ion-button expand="block" fill="outline" class="btn-col" (click)="continue()">I'll Do That Later</ion-button> -->
+  
+</ion-content>
+
+  <!-- <button expand="block" fill="outline" class="btn-col" style="margin-top:10%;">
+    <ion-item>
+     
+      <ion-select multiple="true" cancelText="Cancel" okText="Confirm" interface="popover">
+        <ion-select-option value="sad">Sad</ion-select-option>
+        <ion-select-option value="lonely">Lonely</ion-select-option>
+        <ion-select-option value="afraid">Afraid</ion-select-option>
+        <ion-select-option value="tired">Tired</ion-select-option>
+      </ion-select>
+    </ion-item> -->
+  <!-- </button> -->

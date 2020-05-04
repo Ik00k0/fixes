@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <!-- <ion-toolbar>
+    <ion-title size="medium"> <img alt="logo"> Articles For Today </ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content class="bg-class" [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium"> <img alt="logo"> Articles For Today </ion-title>
+    </ion-toolbar> -->
+  <!-- </ion-header> -->
+
+  
+
+  <ion-grid>
+    <ion-col>
+      <ion-header>
+        <img alt="logo">
+        Facts About Mental Health
+      </ion-header>
+    </ion-col>
+  </ion-grid>
+
+  <ion-list class="bg-transparent">
+    <ion-item *ngFor="let article of articles">
+      <ion-card>
+        <ion-card-header>
+          {{image}}
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            {{title}}
+          </ion-item>
+          <ion-item>
+            {{author}}
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+
+  
+  
+
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>about</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- <ion-card> -->
+    <!-- <ion-card-content> -->
+      <form #userProfileForm="ngForm" (ngSubmit)="onSubmit(userProfileForm)">
+        <ion-card>
+          <ion-card-header>
+            <ion-label>User Information</ion-label>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label>Name: </ion-label>
+              <ion-input clearInput maxlength=20 type="text" [(ngModel)]="uname" name="uname" value={{u_name}}> </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Gender: </ion-label>
+              <ion-select placeholder="Select One">
+                <ion-select-option value="f">Female</ion-select-option>
+                <ion-select-option value="m">Male</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Date of Birth: </ion-label>
+              <ion-input type="date" [(ngModel)]="udob"  name="udob" value={{p_dob}}> </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Phone Number: </ion-label>
+              <ion-input type="number" [(ngModel)]="unumber" required pattern='[0-9]{10}' name="unumber" value={{p_num}}> </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>E-mail: </ion-label>
+              <ion-input type="E-mail" [(ngModel)]="umail" name="umail" value={{u_mail}}> </ion-input>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+        
+
+        <ion-card>
+          <ion-card-header>
+              <ion-label>
+                Emergency Contact Detaails
+              </ion-label>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label>Contact Name: </ion-label>
+              <ion-input type="text" [(ngModel)]="cname" name="cname" value={{c_name}}> </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Contact Number: </ion-label>
+              <ion-input type="number" [(ngModel)]="cnumber" required pattern='[0-9]{10}' name="cnuber" value={{c_num}}> </ion-input>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+        
+        
+        <ion-button type="submit" [disabled]="!userProfileForm.form.valid">save details</ion-button>
+      </form >
+    <!-- </ion-card-content> -->
+  <!-- </ion-card> -->
+
+</ion-content>

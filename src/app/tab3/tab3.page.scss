@@ -1,0 +1,12 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.bg-class{
+  --background: linear-gradient(194deg,#5386B4 23.3%, #3A2A4E 100%) !important;//we need to chamge the gradient to match what we need
+}
+
+// ion-item {
+//   --background: rgba(0,0,0,0);
+//   --border-color: rgba(0,0,0,0);
+// }

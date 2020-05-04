@@ -1,0 +1,295 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["startpages-page2-page2-module"], {
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/startpages/page2/page2.page.html":
+  /*!****************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/startpages/page2/page2.page.html ***!
+    \****************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppStartpagesPage2Page2PageHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<ion-content class=\"bg-class\" fixed>\n\n\n  <ion-grid>\n    <ion-row class=\"centerRow\">\n      <ion-col size=\"12\">\n\n        <ion-fab-button size=\"small\" class=\"whiteBackButton\" router-direction=\"back\">\n          \n          <ion-back-button class=\"purple\" text=\"\"  defaultHref=\"home\" >\n            <ion-icon  color=\"purple\" name=\"caret-back\"></ion-icon>\n          </ion-back-button>\n         \n        </ion-fab-button>\n\n      </ion-col>\n    </ion-row>\n\n\n    <ion-row class=\"centerRow\" class=\"m-0\">\n      <ion-col size=\"12\" class=\"inlineCenter\">\n        <img class=\"w-80\" src=\"/assets/images/manLooking.png\" alt=\"\">\n      </ion-col>\n    </ion-row>\n\n\n    <ion-row class=\"centerRow mt-4\">\n      <ion-col size=\"10\">\n        <div class=\"text-center\">\n          <h1 class=\"whiteText mindITHeader mb-1\">Hey {{this.name}}</h1>\n\n        </div>\n      </ion-col>\n    </ion-row>\n\n    <ion-row class=\"centerRow\">\n      <ion-col size=\"11\">\n        <p class=\"whiteText paragraphText mt-1 \">Please note that by using this\n          application, you agree to our Terms of service and our Privacy policy</p>\n      </ion-col>\n    </ion-row>\n\n\n    <form [formGroup]=\"checkbox\" action=\"\">\n          \n   \n    <ion-row class=\"centerRow\">\n      <ion-col  size=\"10\" class=\"inlineCenter align-middle mt-3\">\n        \n        <input required checked formControlName=\"agree\" id=\"check\" class=\"form-check-input checkbox\" type=\"checkbox\">\n        <label class=\"whiteText paragraphText pl-2\" for=\"check\"><small> I agree to your Privacy Policy</small> </label>\n      </ion-col>\n    </ion-row>\n\n    <ion-row class=\"centerRow mt-4\">\n      <ion-col size=\"10\">\n        <div class=\"\">\n          <button [disabled]=\"checkbox.invalid\" class=\"btn btn-primary btn-lg btn-block\" type=\"submit\" shape=\"round\"\n            color=\"light\" (click)=\"next()\">Alright, Let's go</button>\n        </div>\n      </ion-col>\n    </ion-row>\n\n  </form>\n\n  </ion-grid>\n\n\n\n\n\n\n\n</ion-content>";
+    /***/
+  },
+
+  /***/
+  "./src/app/startpages/page2/page2-routing.module.ts":
+  /*!**********************************************************!*\
+    !*** ./src/app/startpages/page2/page2-routing.module.ts ***!
+    \**********************************************************/
+
+  /*! exports provided: Page2PageRoutingModule */
+
+  /***/
+  function srcAppStartpagesPage2Page2RoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "Page2PageRoutingModule", function () {
+      return Page2PageRoutingModule;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _page2_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./page2.page */
+    "./src/app/startpages/page2/page2.page.ts");
+
+    const routes = [{
+      path: '',
+      component: _page2_page__WEBPACK_IMPORTED_MODULE_3__["Page2Page"]
+    }];
+    let Page2PageRoutingModule = class Page2PageRoutingModule {};
+    Page2PageRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })], Page2PageRoutingModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/startpages/page2/page2.module.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/startpages/page2/page2.module.ts ***!
+    \**************************************************/
+
+  /*! exports provided: Page2PageModule */
+
+  /***/
+  function srcAppStartpagesPage2Page2ModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "Page2PageModule", function () {
+      return Page2PageModule;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @ionic/angular */
+    "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+    /* harmony import */
+
+
+    var _page2_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./page2-routing.module */
+    "./src/app/startpages/page2/page2-routing.module.ts");
+    /* harmony import */
+
+
+    var _page2_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./page2.page */
+    "./src/app/startpages/page2/page2.page.ts");
+
+    let Page2PageModule = class Page2PageModule {};
+    Page2PageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _page2_routing_module__WEBPACK_IMPORTED_MODULE_5__["Page2PageRoutingModule"]],
+      declarations: [_page2_page__WEBPACK_IMPORTED_MODULE_6__["Page2Page"]]
+    })], Page2PageModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/startpages/page2/page2.page.scss":
+  /*!**************************************************!*\
+    !*** ./src/app/startpages/page2/page2.page.scss ***!
+    \**************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppStartpagesPage2Page2PageScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".bg-class {\n  --background: linear-gradient(\n    194deg,\n    #662d72 23.3%,\n    #44a5c6 100%\n  ) !important;\n}\n\n.img-class {\n  height: 60%;\n  width: 80%;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  padding-top: 30%;\n}\n\n.w-80 {\n  max-width: 80%;\n}\n\n.inlineCenter {\n  text-align: center;\n}\n\n.button-clear > .button-text {\n  display: none !important;\n}\n\n.button-text.sc-ion-back-button-md {\n  display: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy8xa29va28vRG9jdW1lbnRzL2lvbmljL01FTlRBTEhFQUxUSEFQUC9zcmMvYXBwL3N0YXJ0cGFnZXMvcGFnZTIvcGFnZTIucGFnZS5zY3NzIiwic3JjL2FwcC9zdGFydHBhZ2VzL3BhZ2UyL3BhZ2UyLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFOzs7O2NBQUE7QUNJRjs7QURHQTtFQUNFLFdBQUE7RUFDQSxVQUFBO0VBQ0EsY0FBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtBQ0FGOztBREdBO0VBQ0UsY0FBQTtBQ0FGOztBREdBO0VBQ0Usa0JBQUE7QUNBRjs7QURHQTtFQUNFLHdCQUFBO0FDQUY7O0FER0E7RUFDRSxhQUFBO0FDQUYiLCJmaWxlIjoic3JjL2FwcC9zdGFydHBhZ2VzL3BhZ2UyL3BhZ2UyLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLmJnLWNsYXNzIHtcbiAgLS1iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoXG4gICAgMTk0ZGVnLFxuICAgICM2NjJkNzIgMjMuMyUsXG4gICAgIzQ0YTVjNiAxMDAlXG4gICkgIWltcG9ydGFudDsgLy93ZSBuZWVkIHRvIGNoYW1nZSB0aGUgZ3JhZGllbnQgdG8gbWF0Y2ggd2hhdCB3ZSBuZWVkXG59XG5cbi5pbWctY2xhc3Mge1xuICBoZWlnaHQ6IDYwJTtcbiAgd2lkdGg6IDgwJTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gIHBhZGRpbmctdG9wOiAzMCU7XG59XG5cbi53LTgwIHtcbiAgbWF4LXdpZHRoOiA4MCU7XG59XG5cbi5pbmxpbmVDZW50ZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5idXR0b24tY2xlYXIgPiAuYnV0dG9uLXRleHQge1xuICBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7XG59XG5cbi5idXR0b24tdGV4dC5zYy1pb24tYmFjay1idXR0b24tbWQge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4iLCIuYmctY2xhc3Mge1xuICAtLWJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudChcbiAgICAxOTRkZWcsXG4gICAgIzY2MmQ3MiAyMy4zJSxcbiAgICAjNDRhNWM2IDEwMCVcbiAgKSAhaW1wb3J0YW50O1xufVxuXG4uaW1nLWNsYXNzIHtcbiAgaGVpZ2h0OiA2MCU7XG4gIHdpZHRoOiA4MCU7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICBwYWRkaW5nLXRvcDogMzAlO1xufVxuXG4udy04MCB7XG4gIG1heC13aWR0aDogODAlO1xufVxuXG4uaW5saW5lQ2VudGVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uYnV0dG9uLWNsZWFyID4gLmJ1dHRvbi10ZXh0IHtcbiAgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50O1xufVxuXG4uYnV0dG9uLXRleHQuc2MtaW9uLWJhY2stYnV0dG9uLW1kIHtcbiAgZGlzcGxheTogbm9uZTtcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/startpages/page2/page2.page.ts":
+  /*!************************************************!*\
+    !*** ./src/app/startpages/page2/page2.page.ts ***!
+    \************************************************/
+
+  /*! exports provided: Page2Page */
+
+  /***/
+  function srcAppStartpagesPage2Page2PageTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "Page2Page", function () {
+      return Page2Page;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @ionic/angular */
+    "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+    /* harmony import */
+
+
+    var _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @ionic-native/native-storage/ngx */
+    "./node_modules/@ionic-native/native-storage/ngx/index.js");
+    /* harmony import */
+
+
+    var _ionic_storage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @ionic/storage */
+    "./node_modules/@ionic/storage/fesm2015/ionic-storage.js");
+
+    let Page2Page = class Page2Page {
+      constructor(activeRoute, router, platform, nativeStore, storage) {
+        this.activeRoute = activeRoute;
+        this.router = router;
+        this.platform = platform;
+        this.nativeStore = nativeStore;
+        this.storage = storage;
+        this.checkbox = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroup"]({
+          agree: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required)
+        });
+        this.name = "";
+      }
+
+      ngOnInit() {
+        this.name = this.activeRoute.snapshot.paramMap.get('name');
+
+        if (this.platform.is("android")) {
+          this.nativeStore.getItem("userInfo").then(data => {
+            this.userInfo = data;
+            console.log(data);
+          }, error => {
+            alert("Error: User Info #2");
+          });
+        } else if (this.platform.is('desktop') || this.platform.is('mobileweb')) {
+          // alert("not android")
+          this.storage.get("userInfo").then(data => tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.userInfo = yield data;
+            this.userInfo.agreed = true;
+          }), failure => {
+            alert("Error: User Info #2");
+          });
+        }
+      }
+
+      next() {
+        this.storage.set("userInfo", this.userInfo);
+        this.router.navigateByUrl('page3');
+      }
+
+    };
+
+    Page2Page.ctorParameters = () => [{
+      type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+    }, {
+      type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+    }, {
+      type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"]
+    }, {
+      type: _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_5__["NativeStorage"]
+    }, {
+      type: _ionic_storage__WEBPACK_IMPORTED_MODULE_6__["Storage"]
+    }];
+
+    Page2Page = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-page2',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./page2.page.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/startpages/page2/page2.page.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./page2.page.scss */
+      "./src/app/startpages/page2/page2.page.scss")).default]
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"], _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_5__["NativeStorage"], _ionic_storage__WEBPACK_IMPORTED_MODULE_6__["Storage"]])], Page2Page);
+    /***/
+  }
+}]);
+//# sourceMappingURL=startpages-page2-page2-module-es5.js.map

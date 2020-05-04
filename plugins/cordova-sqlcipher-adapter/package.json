@@ -1,0 +1,71 @@
+{
+  "_from": "cordova-sqlcipher-adapter",
+  "_id": "cordova-sqlcipher-adapter@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Qqatyh90g8SA0ETnJIhaGvqezQiQB0ncRJYF7fD2qypapPs06c9u+K/6jKWvvm9AamHuiDVvV0/BGaTmfn52Rg==",
+  "_location": "/cordova-sqlcipher-adapter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-sqlcipher-adapter",
+    "name": "cordova-sqlcipher-adapter",
+    "escapedName": "cordova-sqlcipher-adapter",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-sqlcipher-adapter/-/cordova-sqlcipher-adapter-0.5.0.tgz",
+  "_shasum": "58489ce4b155dca4c9fc6da3dd33b2ae8801567d",
+  "_spec": "cordova-sqlcipher-adapter",
+  "_where": "/Users/1kooko/Documents/ionic/MENTALHEALTHAPP",
+  "author": {
+    "name": "various"
+  },
+  "bugs": {
+    "url": "https://github.com/brodybits/cordova-sqlcipher-adapter/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-sqlcipher-adapter",
+    "platforms": [
+      "android",
+      "ios",
+      "osx",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "SQLCipher database adapter for PhoneGap/Cordova, based on cordova-sqlite-storage",
+  "devDependencies": {
+    "coffeescript": "1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^8.1.0"
+  },
+  "homepage": "https://github.com/brodybits/cordova-sqlcipher-adapter",
+  "keywords": [
+    "sqlite",
+    "sqlcipher",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-windows"
+  ],
+  "license": "MIT",
+  "name": "cordova-sqlcipher-adapter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brodybits/cordova-sqlcipher-adapter.git"
+  },
+  "scripts": {
+    "clean-spec": "rm -rf spec/[mnp]* && git cl spec/config.xml && git status --ignored",
+    "prepare-js": "coffee -p SQLitePlugin.coffee.md > www/SQLitePlugin.js",
+    "prepare-spec": "node scripts/prepareSpec.js"
+  },
+  "version": "0.5.0"
+}

@@ -1,0 +1,82 @@
+ion-content {
+  --ion-background-color: #f9f8f9;
+}
+.btn-round {
+  border-radius: 50%;
+  height: 12%;
+  width: 20%;
+  background-image: url("src/assets/images/2.jpg");
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 20%;
+  height: 12%;
+  border-radius: 50%;
+}
+
+.centerVert {
+  position: relative;
+  top: 5em;
+}
+
+.border-rad-none {
+  border-radius: 0px !important;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  background-color: transparent;
+}
+
+.container .btn:hover {
+  background-color: transparent;
+}
+
+.circleBase {
+  border-radius: 50%;
+}
+
+.type1 {
+  width: 60%;
+  height: 50px;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  border-radius: 50%;
+  height: inherit;
+  width: inherit;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sevenEm {
+  margin-bottom: 7em;
+}
+.em14 {
+  margin-bottom: 13em;
+}
+
+.addEntry {
+  --padding-bottom: 2em;
+  --padding-end: 2em;
+  --padding-start: 2em;
+  --padding-top: 2em;
+}
+
+.header-ios ion-toolbar:last-of-type{
+  --border-width: 0px !important;
+}

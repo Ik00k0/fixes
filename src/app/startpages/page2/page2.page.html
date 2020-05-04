@@ -1,0 +1,74 @@
+<ion-content class="bg-class" fixed>
+
+
+  <ion-grid>
+    <ion-row class="centerRow">
+      <ion-col size="12">
+
+        <ion-fab-button size="small" class="whiteBackButton" router-direction="back">
+          
+          <ion-back-button class="purple" text=""  defaultHref="home" >
+            <ion-icon  color="purple" name="caret-back"></ion-icon>
+          </ion-back-button>
+         
+        </ion-fab-button>
+
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="centerRow" class="m-0">
+      <ion-col size="12" class="inlineCenter">
+        <img class="w-80" src="/assets/images/manLooking.png" alt="">
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="centerRow mt-4">
+      <ion-col size="10">
+        <div class="text-center">
+          <h1 class="whiteText mindITHeader mb-1">Hey {{this.name}}</h1>
+
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="centerRow">
+      <ion-col size="11">
+        <p class="whiteText paragraphText mt-1 ">Please note that by using this
+          application, you agree to our Terms of service and our Privacy policy</p>
+      </ion-col>
+    </ion-row>
+
+
+    <form [formGroup]="checkbox" action="">
+          
+   
+    <ion-row class="centerRow">
+      <ion-col  size="10" class="inlineCenter align-middle mt-3">
+        
+        <input required checked formControlName="agree" id="check" class="form-check-input checkbox" type="checkbox">
+        <label class="whiteText paragraphText pl-2" for="check"><small> I agree to your Privacy Policy</small> </label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="centerRow mt-4">
+      <ion-col size="10">
+        <div class="">
+          <button [disabled]="checkbox.invalid" class="btn btn-primary btn-lg btn-block" type="submit" shape="round"
+            color="light" (click)="next()">Alright, Let's go</button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+  </form>
+
+  </ion-grid>
+
+
+
+
+
+
+
+</ion-content>
